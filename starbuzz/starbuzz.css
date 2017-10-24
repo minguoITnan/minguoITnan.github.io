@@ -11,6 +11,16 @@ body {
     height:           108px;
 }
 
+img#headerSlogan {
+    float: right;
+}
+
+#award {
+    position: absolute;
+    top: 30px;
+    left: 365px;
+}
+
 div#tableContainer {
     display:          table;
     border-spacing:   10px;
@@ -39,6 +49,16 @@ div#tableRow {
     background:       #efe5d0 url(images/background.gif) bottom right; 
     font-size:        105%;    padding:          15px;
     vertical-align:   top;
+}
+
+#coupon {
+    position: fixed;
+    top: 350px;
+    left: -90px;
+}
+
+#coupon a, img {
+    border: none;
 }
 
 #footer {
