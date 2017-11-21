@@ -2,6 +2,7 @@ window.onload = getMyLocation;
 
 function getMyLocation() {
   if (navigator.geolocation) {
+    alert(coords.latitude, coords.longitude);
     navigator.geolocation.getCurrentPosition(displayLocation, displayError);
   } else {
     alert("Oops, no geolocation support");
@@ -28,7 +29,6 @@ function displayError(error) {
 
 function showMap(coords) {
   var amapLatandLong = new AMap.Map(coords.latitude, coords.longitude);
-  alert(coords.latitude, coords.longitude);
   var map = new AMap.Map('container', {
     resizeEnable: true,
     zoom: 10,
