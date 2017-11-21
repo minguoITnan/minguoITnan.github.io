@@ -11,6 +11,7 @@ div.areaItem {
 	font-family: Verdana, Helvetica, sans-serif;
 	color: #434343;
 	padding: 10px;
+	line-height: 44px;
 }
 
 div.areaItem:nth-child(2n) {
