@@ -9,11 +9,7 @@ function getMyLocation() {
 }
 
 function displayLocation(position) {
-  var latitude = position.coords.latitude;
-  var longitude = position.coords.longitude;
-
-  var div = document.getElementById("location");
-  div.innerHTML = "You are at Latitude: " + latitude + ", Longitude: " + longitude;
+  showMap(position.coords);
 }
 
 function displayError(error) {
@@ -27,6 +23,15 @@ function displayError(error) {
   if (error.code == 0 || error.code == 2) {
     errorMessage = errorMessage + " " + error.message;
   }
-  var div = document.getElementById("location");
-  div.innerHTML = errorMessage;
+  alert(errorMessage);
+}
+
+function showMap(coords) {
+  var amapLatandLong = new AMap.Map(coords.latitude, coords.longitude);
+  alert(coords.latitude, coords.longitude);
+  var map = new AMap.Map('container', {
+    resizeEnable: true,
+    zoom: 10,
+    center: amapLatandLong
+  });
 }
