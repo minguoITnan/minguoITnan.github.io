@@ -1,4 +1,8 @@
 window.onload = function() {
+  var canvas = document.getElementById('tshirtCanvas');
+  canvas.width = document.documentElement.clientWidth - 20;
+  canvas.height = 300;
+
   var button = document.getElementById("previewButton");
   button.onclick = previewHandler;
 };
