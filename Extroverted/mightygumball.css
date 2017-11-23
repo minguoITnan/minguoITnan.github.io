@@ -1,4 +1,4 @@
-div#areas {
+div#sales {
 	background-color: #d9d9d9;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
@@ -7,13 +7,13 @@ div#areas {
 	border: 1px solid #d9d9d9;
 }
 
-div.areaItem {
+div.saleItem {
 	font-family: Verdana, Helvetica, sans-serif;
 	color: #434343;
 	padding: 10px;
 	line-height: 44px;
 }
 
-div.areaItem:nth-child(2n) {
+div.saleItem:nth-child(2n) {
 	background-color: #fafafa;
 }
